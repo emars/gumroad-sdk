@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Evan Marsland"]
   spec.email         = ["ERmarsland@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Gem to interface with the gumroad api}
+  spec.description   = %q{Gem to interface with the gumroad api}
+  spec.homepage      = "https://github.com/emars/gumroadk-sdk"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -30,4 +30,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
+
+  spec.add_dependency "faraday"
+  spec.add_dependency "json"
 end
